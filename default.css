@@ -57,13 +57,18 @@ html {
 body {
     font-family: sans-serif;
     letter-spacing: 0.42px;
-    max-width: 192rem;
+    width: min(100vw, 120rem);
+
 }
 
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid {
+    display: grid;
 }
 
 .center {

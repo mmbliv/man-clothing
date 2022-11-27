@@ -43,7 +43,7 @@
     height: 100vh;
     position: relative;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -95,7 +95,7 @@
     content: '';
     border-top: 0;
     background-color: white;
-    border-left: 100vw solid transparent;
+    border-left: min(100vw, 120rem) solid transparent;
     border-bottom: 50vh solid black;
     inset: 0;
     z-index: 2;
@@ -131,7 +131,7 @@
     content: '';
     border-top: 0;
     /* background-color: white; */
-    border-left: 100vw solid transparent;
+    border-left: min(100vw, 120rem) solid transparent;
     border-bottom: 50vh solid white;
     inset: 0;
     z-index: 2;
@@ -152,7 +152,7 @@
 
 /* section-1 */
 .section-1 {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: relative;
 
@@ -192,5 +192,83 @@
     position: absolute;
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
     right: 0;
+
+}
+
+/* subscribe--section */
+.section-subscribe {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.subscribe-content--container {
+    height: 50%;
+    flex-direction: column;
+    background-color: #413D4C;
+    color: white;
+    width: 100%;
+}
+
+.subscribe-content {
+    flex-direction: column;
+    width: 70%;
+    align-self: flex-end;
+    text-align: center;
+    gap: 1rem;
+}
+
+.section-subscribe::after {
+    content: '';
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-image: linear-gradient(180deg, #05B5B0 0%, #06B5D0 53%, #08B8E7 100%);
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+
+}
+
+.form {
+    position: relative;
+    width: 80%;
+    border: 1px white solid;
+    border-radius: 2.5rem;
+    height: 4rem;
+    background-color: white;
+    left: -2rem;
+}
+
+.email {
+    position: absolute;
+    border: none;
+    left: 3px;
+
+}
+
+.subscribe--btn {
+    position: absolute;
+    right: 1rem;
+    background-color: #413D4C;
+    color: white;
+    padding: 5px;
+    border-radius: 1.1rem;
+}
+
+.subscribe-content--container {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.img--container {
+    width: 100%;
+    height: 20rem;
+}
+
+.subscribe--img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 
 }
