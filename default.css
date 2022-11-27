@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root {
+
+    /* Colors: */
+    --unnamed-color-08b0dc: #08B0DC;
+    --unnamed-color-08b6cb: #08B6CB;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-ffffff: #FFFFFF;
+
+    /* Font/text values */
+    --unnamed-font-family-montserrat: Montserrat;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-9: 9px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-11: 11px;
+    --unnamed-line-spacing-45: 45px;
+}
+
+/* Character Styles */
+.title {
+    font-family: var(--unnamed-font-family-montserrat);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-45);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+
+.paragraph {
+    font-family: var(--unnamed-font-family-montserrat);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-9);
+    line-height: var(--unnamed-line-spacing-11);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    letter-spacing: 0.42px;
+    max-width: 192rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: var(--unnamed-color-08b0dc);
+    font-family: var(--unnamed-font-style-normal);
+    letter-spacing: 0.9px;
+    font-size: small;
+}
+
+
+.nav-list {
+    font-size: small;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    letter-spacing: 0.7px;
+}
+
+.text--grey {
+    color: #101010;
+}
+
+.text--blue {
+    color: #08B0DC;
+
+}
+
+.text--black {
+    color: black;
+}
+
+.header-h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
+}
+
+.header-h2--1 {
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

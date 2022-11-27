@@ -1,0 +1,129 @@
+ @media (min-width: 600px) {
+     .logo {
+         font-size: large;
+     }
+
+     .nav-list {
+         font-size: large;
+     }
+
+     .header-h1 {
+         font-size: 4rem;
+         align-self: start;
+         letter-spacing: 4px;
+
+     }
+
+     .header-h2--1 {
+         font-size: 1.7rem;
+     }
+
+     p {
+         font-size: 1.5rem;
+     }
+
+     /* header__1 */
+
+
+     .header-nav--container {
+         width: 100%;
+         z-index: 8;
+         position: absolute;
+         top: 20%;
+         justify-content: flex-start;
+         padding-left: 7rem;
+     }
+
+     .header__1-title--container {
+         color: #08B0DC;
+         width: auto;
+         height: auto;
+         text-align: left;
+
+         flex-direction: column;
+         mix-blend-mode: normal;
+         /* background-color: transparent; */
+         z-index: 3;
+         gap: 2rem;
+         border: none;
+         align-self: flex-start;
+         padding-left: 7rem;
+
+
+
+     }
+
+     .header__1::before {
+         display: none;
+     }
+
+     .header__1::after {
+         background-color: transparent;
+         border-left: 50vw solid transparent;
+         border-bottom: 50vh solid #08B0DC;
+         align-self: flex-end;
+
+     }
+
+     .nav-list {
+         width: 60%;
+         justify-content: space-around;
+     }
+
+     /* header__2 */
+     .header__2 {
+         background-image: none;
+     }
+
+
+
+     .header__2::after {
+         content: '';
+         border-top: 0;
+         height: 100%;
+         width: 50%;
+         position: absolute;
+         background-image: url(./assets/png/header-img.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: right;
+         z-index: 2;
+         clip-path: polygon(0 0, 100% 0, 0 100%);
+         border-top: none;
+         border-left: none;
+         border-bottom: none;
+
+     }
+
+
+     .header__2-title--container {
+         flex-direction: column;
+         position: absolute;
+         height: 50%;
+         width: 50%;
+         z-index: 3;
+         color: #08B0DC;
+         gap: 1rem;
+         right: 25%;
+         padding-right: 6rem;
+         align-items: flex-start;
+
+     }
+
+     .header::after {
+         content: '';
+         inset: 0;
+         background-image: url(./assets/png/hero.png);
+         height: 90%;
+         width: 50%;
+         position: absolute;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         left: 50%;
+         z-index: 3;
+         top: 5%;
+
+
+     }
+ }

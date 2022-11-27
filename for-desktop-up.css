@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    .logo {
+        font-size: x-large;
+    }
+
+    .nav-list {
+        font-size: larger;
+    }
+
+    .header__1-title--container {
+        gap: 4rem;
+    }
+
+    .header__2-title--container {
+
+        gap: 2rem;
+
+    }
+}
