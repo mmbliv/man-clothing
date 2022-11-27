@@ -93,9 +93,9 @@ p {
 
 .btn {
     background-color: #413D4C;
-    width: 6rem;
+    width: 7rem;
     border-radius: 1.1rem;
     color: white;
     font-size: smaller;
-    padding: 0 0.7rem;
+    padding: 0.4rem 0.7rem;
 }

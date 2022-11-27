@@ -165,24 +165,21 @@
 
      }
 
-     .subscribe-content--container {
-         height: 50%;
-         flex-direction: column;
-         background-color: #413D4C;
-         color: white;
-         width: 100%;
-         position: relative;
+     .email {
+
+         border-radius: 2.6rem;
+         height: 5rem;
+         font-size: 2rem;
+
+
+
+
 
      }
 
      .form {
-         position: relative;
-         width: 40%;
-         border: 1px white solid;
-         border-radius: 2.5rem;
          height: 4rem;
-         background-color: white;
-
+         width: 40%;
      }
 
      /* emlpyee */
@@ -206,25 +203,12 @@
      /* get-ready */
 
      .getready__content--container::after {
-         content: '';
          height: 8rem;
-         background-color: white;
-         /* position: absolute; */
-         inset: 0;
-         z-index: 10;
-         /* bottom: -10rem; */
-         width: min(100vw, 180rem);
-
-     }
-
-
-
-     .getready__content--container::after {
-         top: 29rem;
+         margin-top: 5rem;
      }
 
      .getready__content--container {
-         top: 10%;
+         top: 10rem;
          left: 5rem;
      }
 

@@ -203,18 +203,20 @@
 
 .form {
     position: relative;
-    width: 80%;
-    border: 1px white solid;
-    border-radius: 2.5rem;
     height: 4rem;
-    background-color: white;
+    width: 80%;
+
 
 }
 
 .email {
     position: absolute;
-    border: none;
-    left: 3px;
+    width: 100%;
+    /* left: 3px; */
+    border-radius: 2.5rem;
+    height: 4rem;
+    background-color: white;
+
 
 
 }
@@ -331,6 +333,7 @@
     z-index: 10;
     /* bottom: -10rem; */
     width: min(100vw, 180rem);
+
 
 }
 
