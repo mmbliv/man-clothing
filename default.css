@@ -1,45 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-:root {
-
-    /* Colors: */
-    --unnamed-color-08b0dc: #08B0DC;
-    --unnamed-color-08b6cb: #08B6CB;
-    --unnamed-color-000000: #000000;
-    --unnamed-color-ffffff: #FFFFFF;
-
-    /* Font/text values */
-    --unnamed-font-family-montserrat: Montserrat;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-weight-bold: bold;
-    --unnamed-font-weight-normal: normal;
-    --unnamed-font-size-9: 9px;
-    --unnamed-font-size-22: 22px;
-    --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-11: 11px;
-    --unnamed-line-spacing-45: 45px;
-}
-
-/* Character Styles */
-.title {
-    font-family: var(--unnamed-font-family-montserrat);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-22);
-    line-height: var(--unnamed-line-spacing-45);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-}
-
-.paragraph {
-    font-family: var(--unnamed-font-family-montserrat);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-9);
-    line-height: var(--unnamed-line-spacing-11);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-}
 
 *,
 ::after,
@@ -57,7 +17,7 @@ html {
 body {
     font-family: sans-serif;
     letter-spacing: 0.42px;
-    width: min(100vw, 120rem);
+    width: min(100vw, 180rem);
 
 }
 
@@ -69,8 +29,7 @@ body {
 
 .grid {
     display: grid;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .center {
@@ -82,8 +41,8 @@ body {
 }
 
 .logo {
-    color: var(--unnamed-color-08b0dc);
-    font-family: var(--unnamed-font-style-normal);
+    color: #08B0DC;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.9px;
     font-size: small;
 }

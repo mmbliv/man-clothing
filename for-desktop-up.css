@@ -4,7 +4,7 @@
     }
 
     .nav-list {
-        font-size: larger;
+        font-size: 1.5rem;
     }
 
     .header__1-title--container {
@@ -15,5 +15,21 @@
 
         gap: 2rem;
 
+    }
+
+    /* getready */
+    .section-getready::before {
+
+        height: 100%;
+    }
+
+    .getready__content--container::after {
+        height: 15rem;
+        top: 35rem;
+    }
+
+    .getready__content--container {
+        top: 40%;
+        left: 10rem;
     }
 }

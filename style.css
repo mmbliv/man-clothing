@@ -1,44 +1,3 @@
-:root {
-
-    /* Colors: */
-    --unnamed-color-08b0dc: #08B0DC;
-    --unnamed-color-08b6cb: #08B6CB;
-    --unnamed-color-000000: #000000;
-    --unnamed-color-ffffff: #FFFFFF;
-
-    /* Font/text values */
-    --unnamed-font-family-montserrat: Montserrat;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-weight-bold: bold;
-    --unnamed-font-weight-normal: normal;
-    --unnamed-font-size-9: 9px;
-    --unnamed-font-size-22: 22px;
-    --unnamed-character-spacing-0: 0px;
-    --unnamed-line-spacing-11: 11px;
-    --unnamed-line-spacing-45: 45px;
-}
-
-/* Character Styles */
-.title {
-    font-family: var(--unnamed-font-family-montserrat);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-bold);
-    font-size: var(--unnamed-font-size-22);
-    line-height: var(--unnamed-line-spacing-45);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-}
-
-.paragraph {
-    font-family: var(--unnamed-font-family-montserrat);
-    font-style: var(--unnamed-font-style-normal);
-    font-weight: var(--unnamed-font-weight-normal);
-    font-size: var(--unnamed-font-size-9);
-    line-height: var(--unnamed-line-spacing-11);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-ffffff);
-}
-
 .header {
     height: 100vh;
     position: relative;
@@ -95,7 +54,7 @@
     content: '';
     border-top: 0;
     background-color: white;
-    border-left: min(100vw, 120rem) solid transparent;
+    border-left: min(100vw, 180rem) solid transparent;
     border-bottom: 50vh solid black;
     inset: 0;
     z-index: 2;
@@ -104,21 +63,6 @@
 
 }
 
-.header::after {
-    content: '';
-    inset: 0;
-    background-image: url(./assets/png/hero.png);
-    height: 90%;
-    width: 50%;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 50%;
-    z-index: 3;
-    top: 5%;
-
-}
 
 .nav-list {
     width: 60%;
@@ -147,7 +91,7 @@
     content: '';
     border-top: 0;
     /* background-color: white; */
-    border-left: min(100vw, 120rem) solid transparent;
+    border-left: min(100vw, 180rem) solid transparent;
     border-bottom: 50vh solid white;
     inset: 0;
     z-index: 2;
@@ -204,7 +148,7 @@
     content: '';
     height: 100%;
     width: 50%;
-    background-color: var(--unnamed-color-08b0dc);
+    background-color: #08B0DC;
     position: absolute;
     clip-path: polygon(100% 0, 100% 100%, 0 100%);
     right: 0;
@@ -225,14 +169,20 @@
     color: white;
     width: 100%;
     position: relative;
+
+
+
 }
 
 .subscribe-content {
+    align-self: flex-end;
     flex-direction: column;
     width: 70%;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     text-align: center;
+    align-items: center;
     gap: 2rem;
+
 }
 
 .subscribe-content--container::after {
@@ -261,6 +211,7 @@
     position: absolute;
     border: none;
     left: 3px;
+
 
 }
 
@@ -328,4 +279,72 @@
     width: 50%;
     right: 1rem;
     align-items: flex-start;
+}
+
+/* get-ready */
+.section-getready {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.section-getready::after {
+    content: '';
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #05B5B0 0%, #06B5D0 53%, #08B8E7 100%);
+    position: absolute;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%);
+    z-index: 2;
+    right: 0;
+}
+
+.section-getready::before {
+    content: '';
+    background-image: url(./assets/png/man-bag.png);
+    position: absolute;
+    height: 60%;
+    width: 50%;
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+    top: 5%;
+    right: 5%;
+
+}
+
+.getready__content--container::after {
+    content: '';
+    height: 10rem;
+    background-color: white;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    top: 25rem;
+    width: min(100vw, 180rem);
+
+}
+
+.getready__content--container {
+    position: absolute;
+    flex-direction: column;
+    top: 15%;
+    width: 40%;
+    left: 3rem;
+    gap: 3rem;
+    align-items: flex-start;
+
+}
+
+/* footer */
+
+
+.footer__container {
+    justify-content: space-between;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 3rem;
+
 }
