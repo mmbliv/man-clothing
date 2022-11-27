@@ -277,9 +277,11 @@
 }
 
 .emplyee__content--container {
-    grid-template-rows: 1fr 1.5fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1.5fr 2fr 3fr 2fr;
+    justify-content: space-between;
+    gap: 1rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 50%;
     right: 1rem;
     align-items: flex-start;
@@ -309,11 +311,12 @@
     content: '';
     background-image: url(./assets/png/man-bag.png);
     position: absolute;
-    height: 60%;
+    height: 70%;
     width: 50%;
     z-index: 3;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     top: 5%;
     right: 5%;
 
@@ -321,12 +324,12 @@
 
 .getready__content--container::after {
     content: '';
-    height: 10rem;
+    height: 5rem;
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     inset: 0;
     z-index: 10;
-    top: 25rem;
+    /* bottom: -10rem; */
     width: min(100vw, 180rem);
 
 }
@@ -334,7 +337,7 @@
 .getready__content--container {
     position: absolute;
     flex-direction: column;
-    top: 15%;
+    top: 30%;
     width: 40%;
     left: 3rem;
     gap: 3rem;

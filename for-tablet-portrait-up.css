@@ -34,7 +34,7 @@
          width: 12rem;
          border-radius: 1.1rem;
          color: white;
-         padding: 1rem 1.4rem;
+         padding: 0.6rem 1.4rem;
          font-size: large;
      }
 
@@ -205,16 +205,27 @@
 
      /* get-ready */
 
+     .getready__content--container::after {
+         content: '';
+         height: 8rem;
+         background-color: white;
+         /* position: absolute; */
+         inset: 0;
+         z-index: 10;
+         /* bottom: -10rem; */
+         width: min(100vw, 180rem);
+
+     }
+
+
 
      .getready__content--container::after {
          top: 29rem;
      }
 
      .getready__content--container {
-
+         top: 10%;
          left: 5rem;
-
-
      }
 
  }

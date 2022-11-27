@@ -1,31 +1,61 @@
 @media (min-width: 1200px) {
     .logo {
-        font-size: x-large;
+        font-size: 3rem;
+    }
+
+    .btn {
+
+        width: 14rem;
+        padding: 0.6rem 1.4rem;
+
+    }
+
+    .header-h1 {
+        font-size: 6rem;
+
+    }
+
+    .header-h2--1 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
     }
 
     .nav-list {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .header__1-title--container {
+        left: 20%;
         gap: 4rem;
     }
 
     .header__2-title--container {
-
         gap: 2rem;
+
+    }
+
+    .img-btn--readmore {
+        width: 14rem;
+        height: 2.5rem;
 
     }
 
     /* getready */
     .section-getready::before {
-
+        right: 0;
         height: 100%;
     }
 
     .getready__content--container::after {
         height: 15rem;
         top: 35rem;
+
     }
 
     .getready__content--container {
