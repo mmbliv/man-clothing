@@ -29,6 +29,15 @@
 
      }
 
+     .btn {
+         background-color: #413D4C;
+         width: 12rem;
+         border-radius: 1.1rem;
+         color: white;
+         padding: 1rem 1.4rem;
+         font-size: large;
+     }
+
      /* header__1 */
 
 
@@ -117,7 +126,7 @@
 
      }
 
-     .header::after {
+     /* .header::after {
          content: '';
          inset: 0;
          background-image: url(./assets/png/hero.png);
@@ -131,7 +140,7 @@
          z-index: 3;
          top: 5%;
 
-     }
+     } */
 
      /* subscribe--section */
      .subscribe-content--container {

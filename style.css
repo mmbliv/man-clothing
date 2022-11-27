@@ -104,6 +104,22 @@
 
 }
 
+.header::after {
+    content: '';
+    inset: 0;
+    background-image: url(./assets/png/hero.png);
+    height: 90%;
+    width: 50%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 50%;
+    z-index: 3;
+    top: 5%;
+
+}
+
 .nav-list {
     width: 60%;
     justify-content: space-around;
@@ -198,8 +214,8 @@
 /* subscribe--section */
 .section-subscribe {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    /* height: 100vh; */
+
 }
 
 .subscribe-content--container {
@@ -208,6 +224,7 @@
     background-color: #413D4C;
     color: white;
     width: 100%;
+    position: relative;
 }
 
 .subscribe-content {
@@ -215,13 +232,13 @@
     width: 70%;
     align-self: flex-end;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.section-subscribe::after {
+.subscribe-content--container::after {
     content: '';
     width: 50%;
-    height: 50%;
+    height: 100%;
     position: absolute;
     background-image: linear-gradient(180deg, #05B5B0 0%, #06B5D0 53%, #08B8E7 100%);
     left: 0;
@@ -237,7 +254,7 @@
     border-radius: 2.5rem;
     height: 4rem;
     background-color: white;
-    left: -2rem;
+
 }
 
 .email {
@@ -256,7 +273,7 @@
     border-radius: 1.1rem;
 }
 
-.subscribe-content--container {
+.subscribe-img--container {
     grid-template-columns: 1fr 1fr;
     width: 100%;
 }
@@ -271,4 +288,44 @@
     width: 100%;
     height: 100%;
 
+}
+
+.section-emplyee {
+    height: 100vw;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.section-emplyee::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #05B5B0 0%, #06B5D0 53%, #08B8E7 100%);
+    position: absolute;
+    clip-path: polygon(0 0, 100% 20%, 0 100%);
+    z-index: 2;
+
+}
+
+.section-emplyee::before {
+    content: '';
+    background-image: url(./assets/png/Groom@2x.png);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+    background-position: center;
+    background-size: cover;
+    bottom: -20%;
+
+}
+
+.emplyee__content--container {
+    grid-template-rows: 1fr 1.5fr 2fr 2fr 1fr;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    right: 1rem;
+    align-items: flex-start;
 }

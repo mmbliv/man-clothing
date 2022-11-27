@@ -69,6 +69,8 @@ body {
 
 .grid {
     display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .center {
@@ -121,4 +123,13 @@ p {
     font-family: sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.btn {
+    background-color: #413D4C;
+    width: 6rem;
+    border-radius: 1.1rem;
+    color: white;
+    font-size: smaller;
+    padding: 0 0.7rem;
 }
