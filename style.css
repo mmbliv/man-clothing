@@ -324,18 +324,7 @@
 
 }
 
-.getready__content--container::after {
-    content: '';
-    height: 5rem;
-    background-color: white;
-    /* position: absolute; */
-    inset: 0;
-    z-index: 10;
-    /* bottom: -10rem; */
-    width: min(100vw, 180rem);
 
-
-}
 
 .getready__content--container {
     position: absolute;
@@ -354,7 +343,8 @@
 .footer__container {
     justify-content: space-between;
     width: 100%;
-    padding: 5rem;
-    margin-top: 3rem;
+    padding: 0 5rem;
+    margin-top: 8rem;
+    z-index: 10;
 
 }

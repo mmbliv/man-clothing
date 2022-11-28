@@ -32,7 +32,7 @@
 
     .header__1-title--container {
         left: 20%;
-        gap: 4rem;
+        gap: 1.5rem;
     }
 
     .header__2-title--container {
@@ -52,11 +52,7 @@
         height: 100%;
     }
 
-    .getready__content--container::after {
-        height: 15rem;
 
-
-    }
 
     .getready__content--container {
         top: 40%;

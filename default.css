@@ -99,3 +99,10 @@ p {
     font-size: smaller;
     padding: 0.4rem 0.7rem;
 }
+
+.liner {
+    height: 3px;
+    width: 60%;
+    background-color: #413D4C;
+    /* align-self: flex-start; */
+}
