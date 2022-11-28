@@ -103,6 +103,10 @@ p {
 .liner {
     height: 3px;
     width: 60%;
-    background-color: #413D4C;
+    background-color: #DEE2E5;
     /* align-self: flex-start; */
+}
+
+.bg--black {
+    background-color: #101010;
 }

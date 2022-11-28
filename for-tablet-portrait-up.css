@@ -94,6 +94,10 @@
          gap: 4rem;
      }
 
+     .bg--black {
+         background-color: #DEE2E5;
+     }
+
      /* header__2 */
      .header__2 {
          background-image: none;
